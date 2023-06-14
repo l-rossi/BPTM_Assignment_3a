@@ -28,9 +28,24 @@ import javax.xml.transform.stream.StreamResult
  *
  *  1) Use a prebuilt jar available at:
  *      a) https://github.com/l-rossi/BPTM_Assignment_3a/blob/master/src/main/resources/application.jar
- *      b) In my personal directory on lehre.bpm.in.tum.de (application.jar)
+ *      b) In my personal directory on lehre.bpm.in.tum.de (ge93xax) (application.jar)
  *  2) Build yourself:
- *
+ *      - get the source code from https://github.com/l-rossi/BPTM_Assignment_3a (which is basically this file with a
+ *        pom file for building). Alternatively: Just use the code already present in my personal directory at lehre.bpm.in.tum.de (ge93xax)
+ *      - Build using maven available here: https://maven.apache.org/download.cgi
+ *           - run build using `mvn package` which will place two jars in the target directory (use the one called ass5K-1.0-jar-with-dependencies.jar)
+ *           - If you are on lehre.bpm.in.tum you can use the files provided in my directory by using the following
+ *             commands:
+ *                  - `cd /assignment_3a/BPTM_Assignment_3a`
+ *                  - `../../apache-maven-3.9.2/bin/mvn package`
+ *                  - `cd target`
+ *                 (- rename: `mv ass5K-1.0-jar-with-dependencies.jar ass3a`  )
+ *      (- make the file executable: `chmod +x ass3a`)
+ *      - The file can now be run using java: `java -jar ass3a <bpmn file>`
+ *      (- Optional: make runnable directly:
+ *          - `echo '#! /usr/bin/java -jar' > ass3a_runnable`
+ *          - `cat ass3a  >> ass3a_runnable`
+ *          - `chmod +x ass3a_runnable`
  *
  */
 
