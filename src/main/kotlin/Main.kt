@@ -19,6 +19,21 @@ import javax.xml.transform.TransformerFactory
 import javax.xml.transform.dom.DOMSource
 import javax.xml.transform.stream.StreamResult
 
+
+/**
+ *  Please Read Me:
+ *
+ *  To run this you can either:
+ *
+ *
+ *  1) Use a prebuilt jar available at:
+ *      a) https://github.com/l-rossi/BPTM_Assignment_3a/blob/master/src/main/resources/application.jar
+ *      b) In my personal directory on lehre.bpm.in.tum.de (application.jar)
+ *  2) Build yourself:
+ *
+ *
+ */
+
 val TASK_TYPES = setOf("serviceTask", "userTask", "intermediateCatchEvent", "task")
 val BORDER_TYPES = setOf("endEvent", "startEvent")
 val GATE_TYPES = setOf("exclusiveGateway", "parallelGateway")
